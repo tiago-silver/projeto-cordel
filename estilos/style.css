@@ -1,0 +1,120 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --font-sriracha: 'Sriracha', cursive;
+    --font-passion-one: 'Passion One', cursive;
+    --font-normal:  Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*{
+   margin: 0PX; 
+   padding: 0px;
+}
+html,body{
+    min-height: 100vh;
+    background-color: darkgrey;
+    font-family: var(--font-normal);
+    
+    
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+   
+}
+header >h1{
+    padding-top: 50px;
+     /*letras maiúsculas...*/
+    /*text-transform: uppercase;*/
+    font-variant: small-caps;
+    font-family: var(--font-passion-one);
+    font-size: 8vw;
+}
+header > p{
+    padding-bottom: 50px;
+}
+a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+#link{
+    color: black;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-family: var(--font-sriracha);
+    font-size: 4.5vw;
+}
+section.normal{
+    background-color: white;
+}
+section.normal >p{
+    padding-bottom: 2em;
+}
+section.imagem{
+    background-color: rgb(80, 78, 78);
+    color: white;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.425);
+
+}
+section.imagem >p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.384);
+    padding: 5px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.514);
+    
+}
+section#img01{
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+section#img02{
+    background-image: url("../imagens/background002.jpg");
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+div#video{
+    background-image: url("../imagens/background003-b.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    
+    padding-bottom: 56%;
+
+}
+div#video > iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+
+    transform: translate(-50%,-50%);
+}
+
+section >p{
+    line-height: 2em;
+    
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
